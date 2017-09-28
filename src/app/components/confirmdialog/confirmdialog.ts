@@ -9,7 +9,7 @@ import {ConfirmationService} from '../common/confirmationservice';
 import {Subscription}   from 'rxjs/Subscription';
 
 @Component({
-    selector: 'p-confirmDialog',
+    selector: 'p-confirm-dialog',
     template: `
         <div [ngClass]="{'ui-dialog ui-confirmdialog ui-widget ui-widget-content ui-corner-all ui-shadow':true,'ui-dialog-rtl':rtl}" 
             [style.display]="visible ? 'block' : 'none'" [style.width.px]="width" [style.height.px]="height" (mousedown)="moveOnTop()" [@dialogState]="visible ? 'visible' : 'hidden'">
